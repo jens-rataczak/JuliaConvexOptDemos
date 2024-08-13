@@ -1,0 +1,4 @@
+[deps]
+Convex = "f65535da-76fb-5f13-bab9-19810c17039a"
+ECOS = "e2685f51-7e38-5353-a97d-a921fd2c8199"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
