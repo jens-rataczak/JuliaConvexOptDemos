@@ -1,7 +1,9 @@
 [deps]
 CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+Clarabel = "61c947e1-3e6d-4ee4-985a-eec8c727bd6e"
 Convex = "f65535da-76fb-5f13-bab9-19810c17039a"
 DataInterpolations = "82cc6244-b520-54b8-b5a6-8a565e85f1d0"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
 ECOS = "e2685f51-7e38-5353-a97d-a921fd2c8199"
 ForwardDiff = "f6369f11-7733-5829-9624-2563aa707210"
 MathOptInterface = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
