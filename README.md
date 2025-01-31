@@ -31,3 +31,26 @@ The other option is to execute a pre-written Julia file from the command line. T
 foo@bar:~$ julia myscript.jl
 ``` 
 which will execute the code within `myscript.jl` and then exit. 
+
+## Running These Notebooks
+If it is your first time cloning this repo and running these notebooks, you first need to install the necessary Julia packages. To do so, first enter the Julia REPL
+```console
+foo@bar:~$ julia
+``` 
+Then, enter the package manager by typing `]` in the REPL
+```console
+julia> ] 
+``` 
+Activate the current environment using the following 
+```console
+(@v1.xx) pkg> activate .
+``` 
+Here the `@v1.xx` just indicates the base environment for whatever version of Julia you have installed. These notebooks were created using Julia 1.10.2, but later versions should probably work. Feel free to contact Jens Rataczak if it doesn't. Once the environment is activated, you should see something like
+```console
+(folder_name) pkg> 
+``` 
+where `folder_name` is the current folder into which you have cloned this repo. Finally, install the necessary packages using the following 
+```console
+(folder_name) pkg> instantiate
+``` 
+Julia should then install the exact version of all dependencies specified in `Manifest.toml`. Once this is complete, you should be ready to run all the code in these notebooks. The package manager in Julia can be exited by hitting backspace until the normal Julia REPL prompt shows.
