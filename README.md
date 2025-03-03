@@ -54,3 +54,10 @@ where `folder_name` is the current folder into which you have cloned this repo. 
 (folder_name) pkg> instantiate
 ``` 
 Julia should then install the exact version of all dependencies specified in `Manifest.toml`. Once this is complete, you should be ready to run all the code in these notebooks. The package manager in Julia can be exited by hitting backspace until the normal Julia REPL prompt shows.
+
+## Overview of Tutorials
+This repository contains three separate convex-optimization tutorials. It is recommended that they be studied in the following order:
+
+1. `convex_tutorial` provides an introduction to `Convex.jl` and how it can be used to solve simple optimization problems. Examples of both unconstrained and constrained optimization problems are given.
+2. `ptr_demo` provides an implementation of the Penalized Trust Region (PTR) sequential convex programming (SCP) algorithm. It applies the PTR algorithm to a simple two-dimensional, deterministic system.
+3. `stochastic_demo` expands the PTR algorithm to consider uncertainty in the system directly. It solves for a sequence of feed-forward controls and feedback gain matrices for the same system in demo 2, however, the constraints are now modeled probabilistically using chance constraints.
